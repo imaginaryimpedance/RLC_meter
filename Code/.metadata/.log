@@ -1,0 +1,37 @@
+!SESSION 2023-04-06 19:06:33.524 -----------------------------------------------
+eclipse.buildId=Version 1.10.1
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pl_PL
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-04-06 19:07:23.694
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-04-06 19:07:23.795
+!MESSAGE Log4j initialized with config file D:\Projekty\Prywatne\RLC_meter\Code\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-04-06 19:07:30.251
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-04-06 19:12:21.348
+!MESSAGE Indexed 'RLC_nucleo' (19 sources, 81 headers) in 3.83 sec: 4,305 declarations; 24,295 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.007%)
+!SESSION 2023-04-07 10:03:49.346 -----------------------------------------------
+eclipse.buildId=Version 1.10.1
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pl_PL
+Framework arguments:  D:\Projekty\Prywatne\RLC_meter\Code\RLC_nucleo\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 D:\Projekty\Prywatne\RLC_meter\Code\RLC_nucleo\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-04-07 10:04:22.080
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-04-07 10:04:22.213
+!MESSAGE Log4j initialized with config file D:\Projekty\Prywatne\RLC_meter\Code\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-04-07 10:04:34.930
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-04-07 10:04:44.386
+!MESSAGE Indexed 'RLC_nucleo' (23 sources, 114 headers) in 9,14 sec: 9 946 declarations; 58 160 references; 2 unresolved inclusions; 33 syntax errors; 188 unresolved names (0,28%)
