@@ -1,0 +1,17 @@
+../Core/Src/main.c:181:7:oled	40	static
+../Core/Src/main.c:125:5:main	24	static
+../Core/Src/main.c:235:7:rangeSelection	16	static
+../Core/Src/main.c:291:7:getDCOffset	16	static
+../Core/Src/main.c:314:7:getRMSValue	16	static
+../Core/Src/main.c:404:6:SystemClock_Config	88	static
+../Core/Src/main.c:444:13:MX_ADC1_Init	56	static
+../Core/Src/main.c:512:13:MX_ADC2_Init	40	static
+../Core/Src/main.c:571:13:MX_DAC1_Init	56	static
+../Core/Src/main.c:618:13:MX_I2C1_Init	8	static
+../Core/Src/main.c:666:13:MX_TIM2_Init	40	static
+../Core/Src/main.c:711:13:MX_TIM3_Init	40	static
+../Core/Src/main.c:756:13:MX_TIM4_Init	40	static
+../Core/Src/main.c:799:13:MX_DMA_Init	16	static
+../Core/Src/main.c:818:13:MX_GPIO_Init	40	static
+../Core/Src/main.c:852:6:HAL_TIM_PeriodElapsedCallback	16	static
+../Core/Src/main.c:863:6:Error_Handler	4	static,ignoring_inline_asm

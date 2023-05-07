@@ -1,17 +1,56 @@
-19:49:02 **** Incremental Build of configuration Debug for project RLC_nucleo ****
+17:47:19 **** Incremental Build of configuration Debug for project RLC_nucleo ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "RLC_nucleo.elf" @"objects.list"   -mcpu=cortex-m0 -T"D:\Projekty\Prywatne\RLC_meter\Code\RLC_nucleo\STM32F072RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RLC_nucleo.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:184:32: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  184 |     HAL_UART_Transmit(&huart2, " V1 = ", 8 , 500);
+      |                                ^~~~~~~~
+      |                                |
+      |                                char *
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:289,
+                 from ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h:1568:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1568 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:185:53: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  185 |     HAL_UART_Transmit(&huart2, (uint8_t*)V1_buffer, sprintf(V1_buffer, "%d", V1_rms), 500);
+      |                                                     ^~~~~~~
+../Core/Src/main.c:185:53: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:27:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   26 | #include "math.h"
+  +++ |+#include <stdio.h>
+   27 | /* USER CODE END Includes */
+../Core/Src/main.c:185:74: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  185 |     HAL_UART_Transmit(&huart2, (uint8_t*)V1_buffer, sprintf(V1_buffer, "%d", V1_rms), 500);
+      |                                                                         ~^   ~~~~~~
+      |                                                                          |   |
+      |                                                                          int uint32_t {aka long unsigned int}
+      |                                                                         %ld
+../Core/Src/main.c:186:32: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  186 |     HAL_UART_Transmit(&huart2, " V ", 4 , 500);
+      |                                ^~~~~
+      |                                |
+      |                                char *
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:289,
+                 from ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h:1568:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1568 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "RLC_nucleo.elf" @"objects.list"   -mcpu=cortex-m0 -T"D:\Projekty\Prywatne\RLC_meter\Code\RLC_nucleo\RLC_nucleo\STM32F072RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RLC_nucleo.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: RLC_nucleo.elf
  
 arm-none-eabi-size   RLC_nucleo.elf 
 arm-none-eabi-objdump -h -S  RLC_nucleo.elf  > "RLC_nucleo.list"
    text	   data	    bss	    dec	    hex	filename
-   9280	    532	   1732	  11544	   2d18	RLC_nucleo.elf
+  45424	    996	   2204	  48624	   bdf0	RLC_nucleo.elf
 Finished building: default.size.stdout
  
 Finished building: RLC_nucleo.list
  
 
-19:49:03 Build Finished. 0 errors, 0 warnings. (took 803ms)
+17:47:20 Build Finished. 0 errors, 5 warnings. (took 1s.81ms)
 

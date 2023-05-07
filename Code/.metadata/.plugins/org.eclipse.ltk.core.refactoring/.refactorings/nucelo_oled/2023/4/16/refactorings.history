@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;nucelo_oled/Core/Src/ssd1306.c&apos; to &apos;OLED_SSD1306.c&apos;" description="Rename resource &apos;ssd1306.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/ssd1306.c" name="OLED_SSD1306.c" stamp="1681748661962" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;nucelo_oled/Core/Inc/ssd1306.h&apos; to &apos;OLED_SSD1306.h&apos;" description="Rename resource &apos;ssd1306.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Inc/ssd1306.h" name="OLED_SSD1306.h" stamp="1681748694658" updateReferences="true"/>
+</session>

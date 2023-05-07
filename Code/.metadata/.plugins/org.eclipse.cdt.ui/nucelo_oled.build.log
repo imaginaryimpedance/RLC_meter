@@ -1,0 +1,10 @@
+20:11:01 **** Incremental Build of configuration Debug for project nucelo_oled ****
+make -j8 all 
+arm-none-eabi-size   nucelo_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18764	    128	   2840	  21732	   54e4	nucelo_oled.elf
+Finished building: default.size.stdout
+ 
+
+20:11:01 Build Finished. 0 errors, 0 warnings. (took 314ms)
+
